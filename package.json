@@ -1,0 +1,15 @@
+{
+  "name": "rps-using-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+    "start": "node a.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsc": "^2.0.4"
+  }
+}
