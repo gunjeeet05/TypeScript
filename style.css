@@ -4,16 +4,36 @@
     height: 40vh;
     
 }
+
 .user{
     display: flex;
     height: 100%;
     width: 45%;
     vertical-align: auto;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+   
     border: 2px solid black;
+    
    
 }
+.userImage{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 90%;
+}
+.userImage img{
+    height: 90%;
+    width: 50%;
+}
+.userButton{
+   display: flex;
+   justify-content: center;
+    height: 10%;
+
+}
+
 .computer{
     width: 45%;
     display: flex;
@@ -24,6 +44,12 @@
    
 }
 
+
+.computer img{
+    height: 90%;
+    width: 50%;
+    
+}
 .resultContainer{
     display: flex;
     flex-direction: column;

@@ -10,6 +10,7 @@ winnerDict={
 }
 
 function play(a:string):string{
+
     
     resDiv.innerText=calculateWinner(a, compChoice()) as string;
     return "";
@@ -30,14 +31,20 @@ function calculateWinner(user:string, comp:string){
 }
 
 function showData(user:string, comp:string){
+    const img=document.getElementById("img") as HTMLImageElement;
+    const img2=document.getElementById("img2") as HTMLImageElement;
+    img.src=`./images/${user}.png`
+    img2.src=`./images/${comp}.png`
     const user1=document.getElementById("userChoice") as HTMLDivElement;
-    user1.innerText="User Chose"
+    user1.innerText="User Chose "+ user;
+    const comp1=document.getElementById("compChoice") as HTMLDivElement;
+    comp1.innerText=`Computer Chose ${comp}`;
 }
 
 function compChoice():string{
     const computer=arr[Math.floor(Math.random()*3)];
-    const compDiv=document.getElementById("computer") as HTMLDivElement;
-    compDiv.innerText=computer;
+    
+  
     return computer
 
 }

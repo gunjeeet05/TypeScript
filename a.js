@@ -11,6 +11,7 @@ function play(a) {
     return "";
 }
 function calculateWinner(user, comp) {
+    showData(user, comp);
     if (user === comp) {
         return "Tie";
     }
@@ -21,10 +22,18 @@ function calculateWinner(user, comp) {
         return "You lost";
     }
 }
+function showData(user, comp) {
+    var img = document.getElementById("img");
+    var img2 = document.getElementById("img2");
+    img.src = "./images/".concat(user, ".png");
+    img2.src = "./images/".concat(comp, ".png");
+    var user1 = document.getElementById("userChoice");
+    user1.innerText = "User Chose " + user;
+    var comp1 = document.getElementById("compChoice");
+    comp1.innerText = "Computer Chose ".concat(comp);
+}
 function compChoice() {
     var computer = arr[Math.floor(Math.random() * 3)];
-    var compDiv = document.getElementById("computer");
-    compDiv.innerText = computer;
     return computer;
 }
 var resDiv = document.getElementById("result");

@@ -8,21 +8,26 @@
 </head>
 <body>
     <div class="players">
+        
         <div class="user">
-            <button class="rock" onclick="play(`rock`)">
-                Rock
-            </button>
-            <button class="paper" onclick="play(`paper`)">
-                paper
-            </button>
-            <button class="scissor" onclick="play(`scissor`)">
-                Scissor
-            </button>
+            <div class="userImage">
+                <img id="img" src="./Images/scissor.png" alt="">
+            </div>
+            <div class="userButton">
+                <button class="rock" onclick="play(`rock`)">
+                    Rock
+                </button>
+                <button class="paper" onclick="play(`paper`)">
+                    paper
+                </button>
+                <button class="scissor" onclick="play(`scissor`)">
+                    Scissor
+                </button>
+            </div>
 
         </div>
         <div class="computer" id="computer">
-            Computer
-
+            <img id="img2" src="./Images/scissor.png" alt="">
         </div>
     </div>
     <div class="resultContainer" id="resultContainer">
